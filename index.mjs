@@ -8,6 +8,7 @@ import transactionRoutes from "./routes/transactionRoutes.mjs";
 import budgetRoutes from "./routes/budgetRoutes.mjs";
 import postRoutes from "./routes/postRoutes.mjs";
 import friendsRoutes from "./routes/friendsRoutes.mjs";
+import repliesRoutes from "./routes/repliesRoutes.mjs";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
@@ -36,6 +37,8 @@ app.use(budgetRoutes);
 app.use(postRoutes);
 
 app.use(friendsRoutes);
+
+app.use(repliesRoutes);
 
 app.get("/", (req, res) => {
   console.log('Hello "/"');
