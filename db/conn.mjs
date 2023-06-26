@@ -28,6 +28,6 @@ db.users = db.collection("users");
 db.transactions = db.collection("transactions");
 db.budgets = db.collection("budgets");
 db.posts = db.collection("posts");
-db.repleis = db.collection("replies");
+db.replies = db.collection("replies");
 
 export default db;
