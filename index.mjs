@@ -40,11 +40,6 @@ app.use(friendsRoutes);
 
 app.use(repliesRoutes);
 
-app.get("/", (req, res) => {
-  console.log('Hello "/"');
-  res.send("/ page");
-});
-
 // Start the Express server
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`); // Wrap string within ` (backtick) instead of " for string formatting
